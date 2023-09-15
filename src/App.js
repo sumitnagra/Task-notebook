@@ -6,6 +6,7 @@ import SignUP from "./Notebook/component/context/signup.js";
 import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Navbar from "./Notebook/component/Navbar.js";
+import Alert from "./Notebook/component/Alert.js";
 
 
 const Notebook = () => {
@@ -26,7 +27,8 @@ const Notebook = () => {
     <Router>
     <NoteState showAlert={showAlert}>
 
-      <Navbar/>
+      <Navbar showAlert={showAlert}/>
+      <Alert alert={alert}/>
       <Routes>
 
         <Route exact path="/notebook" element={<Home showAlert={showAlert} />}></Route>
