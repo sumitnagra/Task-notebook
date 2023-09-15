@@ -1,0 +1,24 @@
+{
+  "name": "notebook",
+  "version": "1.0.0",
+  "description": "this is nootebook on the cloud",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "author": "Sumit",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^5.0.0-alpha.8",
+    "express-validator": "^6.14.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.4.5",
+    "nodemon": "^2.0.22"
+  },
+  "devDependencies": {
+    "@types/jsonwebtoken": "^8.5.8"
+  }
+}
