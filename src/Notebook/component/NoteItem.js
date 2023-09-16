@@ -5,7 +5,7 @@ import './notesitem.css'
 const NoteItem = (props) => {
     const a = useContext(Notecontext);
     const { deleteNote } = a;
-    const { showAlert } = props;
+  
     return (
         <>
             <div className="card  col-md-4  my-2" style={{ width: "18rem" }}>

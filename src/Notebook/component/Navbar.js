@@ -10,7 +10,7 @@ function Navbar(props) {
   }
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-light my-2 ">
+      <nav className="navbar navbar-expand-lg bg-light my-1  ">
         <div className="container-fluid">
           <Link className="navbar-brand" to="">iNOTEBook</Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
