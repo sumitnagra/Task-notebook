@@ -8,6 +8,8 @@ interface Note {
   title: string;
   description: string;
   tag: string;
+  message:string;
+  type:string;
 }
 
 interface NotesProps {
@@ -16,6 +18,7 @@ interface NotesProps {
 }
 
 const Notes: React.FC<NotesProps> = (props) => {
+
   const a = useContext(Notecontext);
   const { state } = a;
   const navigate = useNavigate();
@@ -29,7 +32,7 @@ const Notes: React.FC<NotesProps> = (props) => {
           ) : (
             state.map((element: Note) => (
               <div key={element._id}>
-                <NoteItem title={element.title} description={element.description} id={element._id} tag={element.tag} update={props.update} note={element} showAlert={props.showAlert} />
+                <NoteItem title={element.title} description={element.description} id={element._id} tag={element.tag} update={props.update} note={element}  />
               </div>
             ))
           )}
